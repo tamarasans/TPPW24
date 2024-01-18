@@ -2,10 +2,10 @@
 let demo = document.getElementById("demo");
 
 function salutaStudente(){
-    //il nome viene recuperato solo quando l'utente fa click sul pulsante
     //value è ciò che l'utente digita nel campo input
     let nomeUser = document.getElementById("nomeUser").value;
     let cognomeUser = document.getElementById("cognomeUser").value;
+    //il nome viene recuperato solo quando l'utente fa click sul pulsante
 
     //trim() metodo per stringhe per eliminare gli spazi davanti e alla fine della stringa
     // if(nomeUser.trim() == ""){
