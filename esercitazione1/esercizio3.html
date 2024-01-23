@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        console.log("Esercizio 3");
+        let numeri = [4, 2, 5];
+        console.log(numeri);
+        for (let i = 0; i < numeri.length; i++) {
+            let riga = "";
+            for (let j = 0; j < numeri[i]; j++) {
+                riga += "*"
+            }
+            console.log(riga);
+        }
+
+        console.log("Esercizio 4");
+        for (let i = 1; i < 6; i++) {
+            let riga = "";
+
+            for (let j = 0; j < i; j++) {
+                riga += "*"
+            }
+
+            console.log(riga);
+        }
+
+        console.log("Esercizio 6");
+        for (let i = 1; i < 6; i++) {
+            let riga = "";
+
+            for (let j = 0; j < i; j++) {
+                riga += j + "";
+            }
+
+            console.log(riga);
+        }
+
+        console.log("Esercizio 7");
+        var num = 1;
+        var row = '';
+
+        for (var i = 1; i <= 5; i++) {
+            for (var n = 1; n <= i; n++) {
+                row += ' ' + num++
+            }
+            console.log(row);
+            row = ''
+        }
+
+    </script>
+</body>
+
+</html>

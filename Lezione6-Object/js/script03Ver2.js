@@ -59,28 +59,31 @@
 
 
 //Nel caso di più oggetti dello stesso tipo mi conviene usare la notazione con COSTRUTTORE
-/**
- * 
- * @param {String} nome 
- * @param {String} cognome 
- * @param {String[]} materie 
- */
-function Docente(nome, cognome, materie){
-    //creo le prop usando la parola chiave this
-    this.nome = nome;
-    this.cognome = cognome;
-    this.materie = materie;
 
-    this.descriviTeStesso = function(){
-        let materie = "";
-            
-        this.materie.forEach(materia => {
-            materie += materia + " ";
-        });
-        
-        
-        let descrizione = `Docente ${this.nome} ${this.cognome} insegna: ${materie}`;
-        return descrizione;
+class Docente {
+    /**
+     * 
+     * @param {String} nome 
+     * @param {String} cognome 
+     * @param {String[]} materie 
+     */
+    constructor(nome, cognome, materie) {
+        //creo le prop usando la parola chiave this
+        this.nome = nome;
+        this.cognome = cognome;
+        this.materie = materie;
+
+        this.descriviTeStesso = function () {
+            let materie = "";
+
+            this.materie.forEach(materia => {
+                materie += materia + " ";
+            });
+
+
+            let descrizione = `Docente ${this.nome} ${this.cognome} insegna: ${materie}`;
+            return descrizione;
+        };
     }
 }
 
