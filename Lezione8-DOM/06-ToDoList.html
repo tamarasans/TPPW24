@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <h1>To Do List</h1>
+
+    <input type="text" id="item" placeholder="todo...">
+    <button id="btn">Inserisci</button>
+
+    <ul id="listaToDo">
+
+
+    </ul>
+
+    <script>
+
+        //DA FARE: il singolo item deve diventare un object ed essere inserito in un array
+        //Aggiungere un pulsante per eliminare this li
+
+        let btn = document.querySelector("#btn");
+        let listaToDo = document.querySelector("#listaToDo");
+
+        function aggiungi() {
+            let item = document.querySelector("#item").value;
+
+            let li = document.createElement("li");
+            li.textContent = item;
+
+            li.onclick = function () {
+                this.setAttribute("class", "barrato");
+            }
+
+            listaToDo.appendChild(li);
+        }
+
+        btn.onclick = aggiungi;
+
+    </script>
+
+</body>
+
+</html>

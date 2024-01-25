@@ -8,6 +8,7 @@ class Utente {
 }
 
 
+
 function aggiungiContatto(){
     
     let nome = document.getElementById("nome").value;
@@ -36,6 +37,7 @@ function aggiungiContatto(){
         
         let utente = new Utente(nome, cognome, email, telefono);
         listaUtenti.push(utente);
+        
         feed.innerHTML = "Utente Aggiunto";
 
         demo.innerHTML = "";
@@ -43,6 +45,8 @@ function aggiungiContatto(){
         //     demo.innerHTML += creaCard(listaUtenti[i])
         // }
         stampaLista(listaUtenti);
+
+        pulisciCampi();
 
     }
     console.log(listaUtenti);
@@ -67,6 +71,13 @@ function stampaLista(listaUtenti){
     listaUtenti.forEach(utente =>{
         demo.innerHTML += creaCard(utente)
     });
+}
+
+function pulisciCampi(){
+    document.getElementById("nome").value = "";
+    document.getElementById("cognome").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("telefono").value = "";
 }
 
 let listaUtenti = [];

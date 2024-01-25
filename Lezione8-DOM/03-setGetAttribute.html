@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="demo">
+        <h2>Lista della spesa</h2>
+        <ul id="lista">
+            <li class="txtRed" id="uno">Nutella <span>Fondente</span></li>
+            <li class="txtRed" id="due">Pasta</li>
+            <li class="txtRed" id="tre">Carne</li>
+            <li class="txtRed" id="quattro">Pesce</li>
+            <li class="txtRed" id="cinque">Insalata</li>
+            <li class="txtRed" id="sei">Farina</li>
+        </ul>
+    </div>
+
+    <div id="feed">
+        <h2>Lista Libri</h2>
+        <ul id="listaLibri">
+            <li>Harry Potter</li>
+            <li>Rumore Bianco</li>
+            <li>Il signore degli anelli</li>
+            <li>4321</li>
+            <li>Il barone rampante</li>
+        </ul>
+    </div>
+
+
+    <div id="galleria">
+        <img src="" alt="">
+    </div>
+
+    <script>
+
+        //cambio il colore ai libri
+        let libriLI = document.querySelectorAll("#listaLibri li"); //nodelist
+
+        for (let i = 0; i < libriLI.length; i++) {
+            libriLI[i].setAttribute("class", "txtBlue");
+        }
+
+        let titoloLibri = document.querySelector("#feed h2");
+        titoloLibri.setAttribute("class", "txtBlue");
+
+        //mettere il colore blue solo agli li pari della lista della spesa
+        let lisSpesa = document.querySelectorAll("#lista li"); //nodelist
+
+        for (let i = 0; i < lisSpesa.length; i++) {
+            if (i % 2 == 1) {
+                lisSpesa[i].setAttribute("class", "txtBlue")
+            }
+        }
+
+
+        //metto la foto in galleria
+        let img = document.querySelector("#galleria img");
+        img.setAttribute("src", "https://source.unsplash.com/300x300/?turin");
+        img.setAttribute("alt", "veduta di Torino");
+
+
+        //tolgo l'attributo class dalla lista della spesa
+
+        for (let i = 0; i < lisSpesa.length; i++) {
+            lisSpesa[i].removeAttribute("class")
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

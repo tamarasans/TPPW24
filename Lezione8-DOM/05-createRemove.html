@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="demo">
+        <h2>Lista della spesa</h2>
+        <ul id="lista">
+            <li class="txtRed" id="uno">Nutella <span>Fondente</span></li>
+            <li class="txtRed" id="due">Pasta</li>
+            <li class="txtRed" id="tre">Carne</li>
+            <li class="txtRed" id="quattro">Pesce</li>
+            <li class="txtRed" id="cinque">Insalata</li>
+            <li class="txtRed" id="sei">Farina</li>
+        </ul>
+    </div>
+
+
+    <script>
+        //aggiungo un nuovo li
+
+        let lista = document.querySelector("#lista");
+        // lista.innerHTML += "<li> Acqua </li>";
+
+
+        //creao un nuovo elemento
+        let li = document.createElement("li"); //<li></li>
+
+        //fornisco un testo al mio li
+        li.textContent = "Acqua";
+
+        //aggancio questo li al mio ul#lista
+        //parent.appendChild(child)
+
+        li.onclick = function () {
+            this.classList.toggle("txtRed");
+        }
+
+        lista.appendChild(li);
+
+
+        //removeElement
+        // parent.removeChild(child);
+        //rimuovo sempre acqua poichè li è proprio acqua
+        // lista.removeChild(li);
+
+        //rimuovo un Child centrale
+        lista.removeChild(lista.children[2]);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

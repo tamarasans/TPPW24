@@ -10,26 +10,36 @@
 
 <body>
 
-    <h1>Rubrica Contatti</h1>
+    <main>
 
-    <p>Aggiungi i tuoi contatti</p>
+        <h1>Rubrica Contatti</h1>
+        <form action="">
 
-    <input type="text" placeholder="nome" id="nome"> <br>
-    <input type="text" placeholder="cognome" id="cognome"><br>
-    <input type="email" placeholder="email" id="email"> <br>
-    <input type="tel" placeholder="telefono" id="telefono"> <br>
+            <p>Aggiungi i tuoi contatti</p>
 
-    <button onclick="aggiungiContatto()">Aggiungi</button>
+            <input type="text" placeholder="nome" id="nome"> <br>
+            <input type="text" placeholder="cognome" id="cognome"><br>
+            <input type="email" placeholder="email" id="email"> <br>
+            <input type="tel" placeholder="telefono" id="telefono"> <br>
 
-    <div id="feed"></div>
+            <button onclick="aggiungiContatto()">Aggiungi</button>
 
-    <div id="demo" class="container">
+        </form>
 
-    </div>
+        <section>
+
+            <div id="feed">
+            </div>
 
 
+            <div id="demo" class="container">
+            </div>
 
-    <script src="./js/script.js"></script>
+        </section>
+
+    </main>
+
+    <script src="./js/scriptVer2.js"></script>
 </body>
 
 </html>

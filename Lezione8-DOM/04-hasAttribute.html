@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="lampadina">
+
+    </div>
+
+    <button id="btn">Accendi/Spegni</button>
+
+    <hr>
+
+    <div id="lampadina2" class="bgTransparent borderDouble">
+
+    </div>
+
+    <button id="btnMulti">Cambia Colore</button>
+
+    <script>
+
+        function accendiSpegni() {
+            let lampadina = document.querySelector("#lampadina");
+
+            if (lampadina.hasAttribute("class")) {
+                lampadina.removeAttribute("class");
+            } else {
+                lampadina.setAttribute("class", "bgYellow")
+            }
+        }
+
+        let btn = document.querySelector("#btn");
+        btn.onclick = accendiSpegni;
+
+
+        //Avendo più classi sulla lampadina2 devo usare la prop classList
+        let classiLamp2 = document.querySelector("#lampadina2").classList; //DOMTokenList
+        console.log(classiLamp2);
+
+
+        function cambiaColore() {
+            if (classiLamp2.contains("bgRed")) {
+                classiLamp2.remove("bgRed");
+                classiLamp2.add("bgCyan");
+            } else {
+                classiLamp2.remove("bgCyan");
+                classiLamp2.add("bgRed");
+            }
+
+        }
+
+        let btnMulti = document.querySelector("#btnMulti");
+        btnMulti.onclick = cambiaColore;
+
+
+
+    </script>
+</body>
+
+</html>
