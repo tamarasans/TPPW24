@@ -25,21 +25,45 @@
         //DA FARE: il singolo item deve diventare un object ed essere inserito in un array
         //Aggiungere un pulsante per eliminare this li
 
+        function Item(valore, data, id) {
+            this.valore = valore;
+            this.data = data;
+            this.id = id;
+        }
+
+
+        let listaItems = [];
+
+
         let btn = document.querySelector("#btn");
         let listaToDo = document.querySelector("#listaToDo");
 
         function aggiungi() {
-            let item = document.querySelector("#item").value;
+            let valore = document.querySelector("#item").value;
+
+            let item = new Item(valore, "30/01/24", 0);
+            listaItems.push(item);
 
             let li = document.createElement("li");
-            li.textContent = item;
+            li.textContent = item.valore;
 
             li.onclick = function () {
                 this.setAttribute("class", "barrato");
             }
 
+            let btnDel = document.createElement("button"); //<button></button>
+            btnDel.textContent = " X ";
+
+            //<li>Andare al mare <button> X </button> </li>
+            btnDel.onclick = function () {
+                listaToDo.removeChild(li); //li == this.parentNode
+            }
+
+            li.appendChild(btnDel);
             listaToDo.appendChild(li);
         }
+
+
 
         btn.onclick = aggiungi;
 

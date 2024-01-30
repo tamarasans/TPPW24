@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <h1 id="titolo" class="txtBlue barrato bgRed">Ciao</h1>
+
+
+    <script>
+        let titolo = document.querySelector("#titolo");
+
+        let listaClassi = titolo.classList;
+
+        console.log(listaClassi);
+
+        listaClassi.remove("barrato");
+
+        listaClassi.add("sottolineato");
+
+
+    </script>
+
+</body>
+
+</html>

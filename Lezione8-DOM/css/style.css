@@ -37,3 +37,7 @@
 .barrato{
     text-decoration: line-through;
 }
+
+.sottolineato{
+    text-decoration: underline;
+}
