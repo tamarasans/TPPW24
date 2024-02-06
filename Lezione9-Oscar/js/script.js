@@ -101,19 +101,19 @@ btnIndietro.onclick = function(){
 //////////////////////
 
 
-    // let inputTitolo = document.querySelector("#inputTitolo");
-    // let inputLocandina = document.querySelector("#inputLocandina");
-    // let inputAttori = document.querySelector("#inputAttori");
-    // let inputDurata = document.querySelector("#inputDurata");
-    // let inputPrezzo = document.querySelector("#inputPrezzo");
+    let inputTitolo = document.querySelector("#inputTitolo");
+    let inputLocandina = document.querySelector("#inputLocandina");
+    let inputAttori = document.querySelector("#inputAttori");
+    let inputDurata = document.querySelector("#inputDurata");
+    let inputPrezzo = document.querySelector("#inputPrezzo");
 
 
-    // let anteprimaTitolo = document.querySelector("#anteprimaTitolo");
+    let anteprimaTitolo = document.querySelector("#anteprimaTitolo");
 
-    // inputTitolo.onblur = function(){
-    //     console.log(this.value);
-    //     anteprimaTitolo.innerHTML = this.value ;  
-    // }
+    inputTitolo.onblur = function(){
+        console.log(this.value);
+        anteprimaTitolo.innerHTML = this.value ;  
+    }
 
     let inputs = document.querySelectorAll("#maskInsert input");
     inputs.forEach(input =>{
