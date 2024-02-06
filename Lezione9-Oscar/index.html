@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -12,25 +15,56 @@
     <h1>Cinema Immaginazione</h1>
     <p>Film in sala</p>
 
-    <div id="singoloFilm">
+    <div id="singoloFilm" class="container-fluid">
 
-        <div class="container">
-            <h3 id="titoloFilm"></h3>
-            <div class="boxSx">
-                <img src="" alt="" id="locandinaFilm">
+        <div class="row">
+            <div class="box boxSx">
+                <h3 id="titoloFilm"></h3>
+                <img src="" alt="" id="locandinaFilm" class="locandina">
+                <div class="boxBtn">
+                    <button id="btnIndietro">Indietro</button>
+                    <button id="btnAvanti">Avanti</button>
+                </div>
             </div>
 
-            <div class="boxDx">
+            <div class="box boxDx">
+                <h4>Attori</h4>
                 <ul id="listaAttoriFilm"></ul>
                 <p id="registaFilm"></p>
                 <p id="durataFilm"></p>
                 <p id="prezzoFilm"></p>
             </div>
+
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Maschera Inserimento -->
+    <h2 style="text-align: center;">Inserisci un nuovo film</h2>
+    <div id="maskInsert" class="container mt5">
+
+        <div class="row">
+            <div class="box container-form">
+                <input type="text" placeholder="Titolo" id="inputTitolo"> <br>
+                <input type="text" placeholder="Locandina" id="inputLocandina"> <br>
+                <input type="text" placeholder="Attori" id="inputAttori"> <button id="btnAddActor"> + </button> <br>
+                <input type="number" placeholder="Durata" id="inputDurata"><br>
+                <input type="number" placeholder="Prezzo" id="inputPrezzo"><br>
+                <button id="btnSalva">Salva</button>
+            </div>
+            <div class="box">
+                <h3 style="margin-top: 0;">Anteprima</h3>
+                <h5 id="anteprimaTitolo"></h5>
+                <img style="width: 100px; height: auto;" id="anteprimaLocandina">
+                <ul id="anteprimaAttori"></ul>
+                <p id="anteprimaDurata"></p>
+                <p id="anteprimaPrezzo"></p>
+            </div>
         </div>
     </div>
 
-    <button id="btnIndietro">Indietro</button>
-    <button id="btnAvanti">Avanti</button>
 
 
     <script src="./js/script.js"></script>
