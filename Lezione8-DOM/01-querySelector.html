@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="demo">
+        <h2>Lista della spesa</h2>
+        <ul id="lista">
+            <li id="uno">Nutella <span>Fondente</span></li>
+            <li id="due">Pasta</li>
+            <li id="tre">Carne</li>
+            <li id="quattro">Pesce</li>
+            <li id="cinque">Insalata</li>
+            <li id="sei">Farina</li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        // let uno = document.getElementById("uno");
+        //seleziono 1 singolo elemento
+        let uno = document.querySelector("#uno");
+        console.log(uno);
+
+        let due = document.querySelector("#due");
+        console.log(due);
+
+        //voglio leggere il contenuto. InnerHTML legge e scrive testo e html
+        let contenuto1 = uno.innerHTML;
+        console.log(contenuto1);
+
+        //textContent legge e scrive SOLO testo 
+        let cotenuto1bis = uno.textContent;
+        console.log(cotenuto1bis);
+
+        let demo = document.querySelector("#demo");
+        console.log(demo);
+
+        //pur avendo tanti li recupera solo il primo li 
+        let li = document.querySelector("li");
+        console.log(li);
+
+        let ul = document.querySelector("ul");
+        console.log(ul);
+
+        //questo produce una HTMLCollection
+        let figliUL = ul.children;
+        console.log(figliUL);
+
+        //voglio stampare i singoli contenuti negli li 
+        for (let i = 0; i < figliUL.length; i++) {
+            console.log(figliUL[i].textContent);
+        }
+
+    </script>
+
+</body>
+
+</html>

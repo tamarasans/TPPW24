@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="demo">
+        <h2>Lista della spesa</h2>
+        <ul id="lista">
+            <li class="txtRed" id="uno">Nutella <span>Fondente</span></li>
+            <li class="txtRed" id="due">Pasta</li>
+            <li class="txtRed" id="tre">Carne</li>
+            <li class="txtRed" id="quattro">Pesce</li>
+            <li class="txtRed" id="cinque">Insalata</li>
+            <li class="txtRed" id="sei">Farina</li>
+        </ul>
+    </div>
+
+    <div id="feed">
+        <h2>Lista Libri</h2>
+        <ul id="listaLibri">
+            <li>Harry Potter</li>
+            <li>Rumore Bianco</li>
+            <li>Il signore degli anelli</li>
+            <li>4321</li>
+            <li>Il barone rampante</li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        //voglio selezionare tutti gli li della pagina
+        let lis = document.querySelectorAll("li"); //NODELIST
+        console.log(lis);
+
+        //VOGLIO SOlo gli li della spesa
+        let lispesa = document.querySelectorAll("li.txtRed"); //NODELIST
+        let lispesa2 = document.querySelectorAll("#lista li");  //NODELIST
+
+        //voglio gli li dei libri
+        let lisLibri = document.querySelectorAll("#listaLibri li");
+        let lisLibri2 = document.querySelectorAll("#feed li");
+        let lisLibri3 = document.querySelectorAll("#listaLibri")[0].children //HTMLCollection
+
+
+        //prendo 1 elemento con querySelectorAll
+        // let feed = document.querySelectorAll("#feed");
+        // console.log(feed[0].children[1].children);
+
+
+        //STAMPO I LIBRI, i titoli
+        lisLibri.forEach(li => {
+            console.log(li.textContent);
+        })
+
+        //posso anche modificare i titoli 
+        lisLibri[0].textContent = "Batman e Robin";
+
+
+        //prendo tutti i miei div
+        let divs = document.querySelectorAll("div");
+        console.log(divs);
+    </script>
+
+</body>
+
+</html>
