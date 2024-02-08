@@ -31,7 +31,7 @@ function calcola(num1, num2){
     return "Il prodotto vale: " + prodotto;
 }
 
-btnCalc.addEventListener("click", function(){
+btnCalc.addEventListener("click", ()=>{
     let num1 = document.querySelector("#num1").value;
     let num2 = document.querySelector("#num2").value;
 

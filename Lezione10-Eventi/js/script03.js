@@ -23,7 +23,7 @@ let demo = document.querySelector("#demo");
 // })
 
 
-formReg.addEventListener(event =>{
+formReg.addEventListener("submit", event =>{
     let username = document.querySelector("#username").value;
     let password = document.querySelector("#password").value;
     
