@@ -46,17 +46,18 @@ let btnLeggiPersone = document.querySelector("#btnLeggiPersone");
 let demo = document.querySelector("#demo");
 
 function leggiPersone(){
-  let persone =JSON.parse(localStorage.getItem("persone"));
+  let persone = JSON.parse(localStorage.getItem("persone"));
+
 
   persone.forEach(persona =>{
     demo.innerHTML += `
-        <div style="border: 1px solid black; margin-top: 20px"
+        <div style="border: 1px solid black; margin-top: 20px">
         <p> ${persona.nome} ${persona.cognome}</p>
         <p> Tipo: ${persona.tipo}
+        </div>
     `
   })
-  
-  console.log(persone);
+
 }
 
 btnLeggiPersone.addEventListener("click", leggiPersone);
