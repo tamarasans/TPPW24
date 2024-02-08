@@ -44,4 +44,9 @@ localStorage.setItem("saluta", "Ciao Bello")
 localStorage.setItem("status", "online")
 localStorage.setItem("Età", 34);
 
+let colori = ["Bianco", "Azzurro", "Verde"];
+let coloriJSON = JSON.stringify(colori)
+localStorage.setItem("colori", coloriJSON)
+
+
 console.log(localStorage.key(0), localStorage.length);
