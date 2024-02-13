@@ -1,0 +1,26 @@
+.rowparola{
+
+    border: 1px solid black;
+    display: flex;
+    width: 200px;
+}
+
+.boxlett{
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    margin: 6px;
+    text-align: center;
+}
+
+.grid{
+    margin-top: 50px;
+}
+
+.bgYellow{
+    background-color: yellow;
+}
+
+.bgGreen{
+    background-color: greenyellow;
+}
