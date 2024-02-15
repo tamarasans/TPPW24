@@ -1,7 +1,8 @@
 class Messaggio {
-    constructor(idUtente, contenuto) {
+    constructor(idUtente, contenuto, oraInvio) {
         this.idUtente = idUtente;
         this.contenuto = contenuto;
+        this.oraInvio = oraInvio;
     }
 }
 
@@ -11,7 +12,12 @@ let btnInvia = document.querySelector("#btnInvia");
 
 function salvaMessaggio(){
     let contenuto = document.querySelector("#messaggio").value;
-    let nuovoMsg = new Messaggio("Dario", contenuto);
+
+    let data = new Date();
+    let ora = data.getHours();
+    let min = data.getMinutes();
+
+    let nuovoMsg = new Messaggio("Dario", contenuto, ora +":" + min );
 
     messaggi.push(nuovoMsg);
 
@@ -57,9 +63,23 @@ function stampaMessaggi (){
             <div class ='cardMsg'>
                 <h4>${msg.idUtente}:</h4>
                 <p>${msg.contenuto}</p>
+                <p>${msg.oraInvio}</p>
             </div>
         `
     });
 }
 
 //////////////////////////////////////////////////
+
+function recuperaVecchiMsg(){
+    //messaggi è la mia variabile globale
+        messaggi = JSON.parse( localStorage.getItem("messaggi") );
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+    if(this.localStorage.length != 0){
+        recuperaVecchiMsg();
+        stampaMessaggi();
+    }
+});
+
