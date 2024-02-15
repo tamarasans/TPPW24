@@ -17,7 +17,7 @@ function salvaMessaggio(){
     let ora = data.getHours();
     let min = data.getMinutes();
 
-    let nuovoMsg = new Messaggio("Dario", contenuto, ora +":" + min );
+    let nuovoMsg = new Messaggio(localStorage.getItem("userConnesso"), contenuto, ora +":" + min );
 
     messaggi.push(nuovoMsg);
 
@@ -77,7 +77,10 @@ function recuperaVecchiMsg(){
 }
 
 window.addEventListener("DOMContentLoaded", function(){
-    if(this.localStorage.length != 0){
+
+    this.document.querySelector("#benvenuto").textContent = "Benvenuto" + this.localStorage.getItem("userConnesso")
+
+    if(this.localStorage.key("messaggio") != ""){
         recuperaVecchiMsg();
         stampaMessaggi();
     }
