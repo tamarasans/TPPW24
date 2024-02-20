@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>ForEach</h1>
+
+
+    <script>
+        let persone = ["Alessandro", "Elena", "Tamara", "Paolo"];
+
+        let studenti = new Array("Piipo", "Paperino", "Pluto");
+
+
+        for (let i = 0; i < persone.length; i++) {
+            console.log(persone[i] + " di indice " + i);
+            var mioNome = "Dario"; //var all'interno di un costrutto dichiara una variabile globale
+            let tuoNome = "Elena"; //let all'interno di un costrutto dichiara una variabile locale
+        }
+
+        console.log(mioNome); //Dario
+        // console.log(tuoNome); //Uncaught reference
+
+        console.log("CON IL FOREACH");
+
+        ///Il forEach si applica solo ed esclusivamente agli array o alle nodelist
+        //Accetta come parametro una funzione il cui argomento è l'i-esimo elemento dell'array
+
+        //persona è un parametro arbitrario che utilizzo per indicare il singolo elemento nell'array persone
+        persone.forEach((persona, i) => {
+            console.log(persona + " di indice " + i);
+        })
+
+
+        let mieiStudenti = [
+            {
+                nome: "Simone",
+                matricola: 4,
+                presenza: true
+            },
+
+            {
+                nome: "Marco",
+                matricola: 5,
+            },
+            {
+                nome: "Paolo",
+                matricola: 6,
+                presenza: true
+            },
+            {
+                nome: "Vania",
+                matricola: 7,
+                presenza: true
+            }
+        ];
+
+
+
+        mieiStudenti.forEach(s => {
+            if (s.presenza == false) {
+                console.log(s.nome + " mat: " + s.matricola + " Assente");
+            } else {
+                console.log(s.nome + " mat: " + s.matricola);
+            }
+        })
+
+    </script>
+</body>
+
+</html>
