@@ -1,13 +1,15 @@
 let demo = document.querySelector("#demo");
 const URL = "https://reqres.in/api/users";
 
-
 let utenti = [];
-
 
 fetch(URL)
     .then(data => {
+        
         console.log(data);
+        // if(data.status != 200){
+        //     location.href = "./404.html";
+        // }
         return data.json();
     })
     .then(response =>{
@@ -25,7 +27,13 @@ fetch(URL)
             demo.innerHTML += creaCard(utente);
         });
 
-    });
+    })
+    //il metodo catch parte solo se la promise (ovvero le fetch) entra in uno stato di rejected
+    .catch(error =>{
+        console.log(error);
+        demo.innerHTML = "Mi spiace, i dati non si trovano oppure c'è il server rotto";
+        location.href = "./404.html";
+    })
     
 
     function creaCard(utente){
@@ -35,3 +43,4 @@ fetch(URL)
 
         return card;
     }
+
