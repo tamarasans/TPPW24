@@ -33,19 +33,24 @@ function creaLiProdotto(prodotto){
         console.log(prodotto);
         prodottiCarrello.push(prodotto);
         caricaCarrello(prodottiCarrello);
-    })
-
+    });
 
     li.appendChild(button);
-
     return li;
 }
+
+window.addEventListener("DOMContentLoaded", function(){
+    if(this.localStorage.key("listaCarello") != null){
+        prodottiCarrello = JSON.parse(this.localStorage.getItem("listaCarrello"));
+    }
+})
 
 /**
  * 
  * @param {Prodotto[]} arrayProdotti 
  */
 function caricaCarrello(arrayProdotti){
+    
     let listaJSON = JSON.stringify(arrayProdotti);
     localStorage.setItem("listaCarrello", listaJSON);
 }

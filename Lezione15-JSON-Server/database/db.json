@@ -1,0 +1,33 @@
+{
+  "docente": {
+    "id": 0,
+    "nome": "Dario Mennillo"
+  },
+  "studenti": [
+    {
+      "id": 0,
+      "nome": "Marco"
+    },
+    {
+      "id": 1,
+      "nome": "Luisa"
+    },
+    {
+      "id": 2,
+      "nome": "Paola"
+    },
+    {
+      "id": 3,
+      "nome": "Gennarino"
+    },
+    {
+      "id": 4,
+      "nome": "Noemi"
+    },
+    {
+      "id": 5,
+      "nome": "Pasquale"
+    }
+  ],
+  "admin": "Jacopo"
+}
