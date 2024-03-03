@@ -4,6 +4,7 @@ const URL = "https://reqres.in/api/users";
 let utenti = [];
 
 fetch(URL)
+//il primo then gestisce la response del server
     .then(data => {
         
         console.log(data);
@@ -34,7 +35,8 @@ fetch(URL)
         demo.innerHTML = "Mi spiace, i dati non si trovano oppure c'è il server rotto";
         location.href = "./404.html";
     })
-    
+     
+    console.log("Questi sono gli utenti globali", utenti);
 
     function creaCard(utente){
         let card = `<li> ${utente.first_name} ${utente.last_name}
