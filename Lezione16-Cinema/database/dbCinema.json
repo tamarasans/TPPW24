@@ -1,0 +1,297 @@
+{
+    "spettacoli": [
+      {
+        "id": "1",
+        "titolo": "Dune 2",
+        "locandina": "https://pad.mymovies.it/filmclub/2021/10/212/locandinapg1.jpg",
+        "durata": 166,
+        "prezzo": 6.5,
+        "replica": [
+          {
+            "sala": "Sala 1 -Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 -O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 1,
+        "disponibilità": true
+      },
+      {
+        "id": "2",
+        "titolo": "Estranei",
+        "locandina": "https://pad.mymovies.it/filmclub/2023/10/073/locandinapg1.jpg",
+        "durata": 125,
+        "prezzo": 6,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 1,
+        "disponibilità": false
+      },
+      {
+        "id": "3",
+        "titolo": "Povere Creature",
+        "locandina": "https://pad.mymovies.it/filmclub/2023/05/092/locandina.jpg",
+        "durata": 141,
+        "prezzo": 6.5,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 1,
+        "disponibilità": true
+      },
+      {
+        "id": "4",
+        "titolo": "Enigma Rol",
+        "locandina": "https://pad.mymovies.it/filmclub/2023/09/150/locandina.jpg",
+        "durata": 152,
+        "prezzo": 7,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 1,
+        "disponibilità": false
+      },
+      {
+        "id": "5",
+        "titolo": "La zona d'interesse",
+        "locandina": "https://pad.mymovies.it/filmclub/2023/03/023/locandinapg2.jpg",
+        "durata": 117,
+        "prezzo": 6,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 1,
+        "disponibilità": true
+      },
+      {
+        "id": "6",
+        "titolo": "Bob Marley-One Love",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2023/12/05/bob-marley-one-love_jpg_240x0_crop_q85.jpg",
+        "durata": 107,
+        "prezzo": 6.5,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 1,
+        "disponibilità": true
+      },
+      {
+        "id": "7",
+        "titolo": "Caracas",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2024/01/29/caracas_jpg_240x0_crop_q85.jpg",
+        "durata": 97,
+        "prezzo": 6,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 0,
+        "disponibilità": false
+      },
+      {
+        "id": "8",
+        "titolo": "Emma e il giaguaro nero",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2024/02/21/emma-e-il-giaguaro-nero_jpg_240x0_crop_q85.jpg",
+        "durata": 100,
+        "prezzo": 6.5,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 0,
+        "disponibilità": true
+      },
+      {
+        "id": "9",
+        "titolo": "Past Lives",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2023/12/28/past-lives-poster-italiano_jpg_240x0_crop_q85.jpg",
+        "durata": 106,
+        "prezzo": 6.5,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 0,
+        "disponibilità": false
+      },
+      {
+        "id": "10",
+        "titolo": "Lupin III: Il castello di Cagliostro",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2024/02/09/lupine-iii-il-castello-di-cagliostro_jpg_240x0_crop_q85.jpg",
+        "durata": 100,
+        "prezzo": 6,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": "02/03/2024",
+        "disponibilità": false
+      },
+      {
+        "id": "11",
+        "titolo": "My Sweet Monster",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2024/01/24/my_sweet_monster_-_poster_italiano_ufficiale_jpg_240x0_crop_q85.jpg",
+        "durata": 98,
+        "prezzo": 6,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 0,
+        "disponibilità": false
+      },
+      {
+        "id": "12",
+        "titolo": "La sala professori",
+        "locandina": "https://movieplayer.net-cdn.it/t/images/2024/02/01/salaprofessori_50x70_web_jpg_240x0_crop_q85.jpg",
+        "durata": 98,
+        "prezzo": 6,
+        "replica": [
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "20:30"
+          },
+          {
+            "sala": "Sala 2 - O.V.",
+            "orario": "21:00"
+          },
+          {
+            "sala": "Sala 1 - Imax",
+            "orario": "23:00"
+          }
+        ],
+        "scadenza": 0,
+        "disponibilità": true
+      }
+    ],
+    "bigliettiAcquistati": [
+      {
+        "nome": "Dario Mennillo",
+        "spettacolo": "Dune - Sala 1 Imax - 20:30",
+        "pagamento": true,
+        "id": "ea26"
+      },
+      {
+        "id": "2740",
+        "persona": "Pippo Peppo",
+        "email": "21@d.i",
+        "tel": "2134442",
+        "biglietti": [
+          "cose"
+        ]
+      }
+    ]
+  }
