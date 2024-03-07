@@ -45,9 +45,12 @@ function creaCardFilm(film) {
 
     if (film.disponibilità) {
         let dropDown = document.createElement("select");
+
+        dropDown.setAttribute("id", "sceltaFilm" + film.id); //assegno un id dinamico ad ogni select
+
         dropDown.setAttribute("class", "form-select");
         film.replica.forEach(rep => {
-            dropDown.innerHTML += `<option value="${rep.orario}"> ${rep.sala} - ${rep.orario} </option>`
+            dropDown.innerHTML += `<option value="${rep.sala} - ${rep.orario}"> ${rep.sala} - ${rep.orario} </option>`
         });
 
         divCardBody.appendChild(dropDown)
@@ -56,6 +59,13 @@ function creaCardFilm(film) {
         buttonAcquista.setAttribute("class", "btn btn-primary mt-3");
         buttonAcquista.textContent = "Acquista";
 
+        buttonAcquista.addEventListener("click", function () {
+
+            let scelta = dropDown.value;
+
+            localStorage.setItem(film.id, film.titolo + " - " + scelta + " - " + film.prezzo)
+        })
+
         divCardBody.appendChild(buttonAcquista);
     } else {
         divCardBody.innerHTML += "<h3> Film non più disponibile </h3>"
@@ -63,12 +73,3 @@ function creaCardFilm(film) {
 
     return card;
 }
-
-// <div class="card col-3 m-2">
-//     <img class="card-img-top" src="holder.js/100x180/" alt="Title" />
-//           <div class="card-body">
-//                <h4 class="card-title">Title</h4>
-//                 <p class="card-text">Text</p>
-//                 <button class="btn btn-primary ">Acquista</button>
-//           </div>
-// </div>
