@@ -45,3 +45,12 @@ let btnPaga = document.querySelector("#btnPaga");
 btnPaga.addEventListener("click", paga);
 
 
+
+let citta = "Melizzano";
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${citta}&appid=b542efe3dcddbd27283ebf045c4e1ca6`)
+    .then(data => {
+        return data.json()
+    })
+    .then(response => {
+        console.log(response);
+    })
