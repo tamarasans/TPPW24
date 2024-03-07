@@ -44,7 +44,7 @@
           }
         ],
         "scadenza": 1,
-        "disponibilità": true
+        "disponibilità": false
       },
       {
         "id": "3",
@@ -90,7 +90,7 @@
           }
         ],
         "scadenza": 1,
-        "disponibilità": true
+        "disponibilità": false
       },
       {
         "id": "5",
@@ -159,7 +159,7 @@
           }
         ],
         "scadenza": 0,
-        "disponibilità": true
+        "disponibilità": false
       },
       {
         "id": "8",
@@ -205,7 +205,7 @@
           }
         ],
         "scadenza": 0,
-        "disponibilità": true
+        "disponibilità": false
       },
       {
         "id": "10",
@@ -228,7 +228,7 @@
           }
         ],
         "scadenza": "02/03/2024",
-        "disponibilità": true
+        "disponibilità": false
       },
       {
         "id": "11",
@@ -251,7 +251,7 @@
           }
         ],
         "scadenza": 0,
-        "disponibilità": true
+        "disponibilità": false
       },
       {
         "id": "12",

@@ -1,4 +1,5 @@
 let elListaSpettacoli = document.querySelector("#elListaSpettacoli");
+let elListaScaduti = document.querySelector("#elListaScaduti");
 
 function recuperaFilm() {
     const urlFilm = "http://localhost:3000/spettacoli"
@@ -10,7 +11,11 @@ function recuperaFilm() {
             console.log(films);
 
             films.forEach(film => {
-                elListaSpettacoli.appendChild(creaCardFilm(film));
+                if (film.disponibilità) {
+                    elListaSpettacoli.appendChild(creaCardFilm(film));
+                } else {
+                    elListaScaduti.appendChild(creaCardFilm(film))
+                }
             });
         })
 }
@@ -18,7 +23,7 @@ function recuperaFilm() {
 window.addEventListener("DOMContentLoaded", recuperaFilm);
 
 /**
- * @param { Object } film 
+ * @param {Object} film 
  */
 function creaCardFilm(film) {
     let card = document.createElement("div");
@@ -38,19 +43,23 @@ function creaCardFilm(film) {
     divCardBody.innerHTML += `<h4 class="card-title"> ${film.titolo} </h4>`;
     divCardBody.innerHTML += `<p class="card-text"> Costo: ${film.prezzo} € </p>`;
 
-    let dropDown = document.createElement("select");
-    dropDown.setAttribute("class", "form-select");
-    film.replica.forEach(rep => {
-        dropDown.innerHTML += `<option value="${rep.orario}"> ${rep.sala} - ${rep.orario} </option>`
-    });
+    if (film.disponibilità) {
+        let dropDown = document.createElement("select");
+        dropDown.setAttribute("class", "form-select");
+        film.replica.forEach(rep => {
+            dropDown.innerHTML += `<option value="${rep.orario}"> ${rep.sala} - ${rep.orario} </option>`
+        });
 
-    divCardBody.appendChild(dropDown)
+        divCardBody.appendChild(dropDown)
 
-    let buttonAcquista = document.createElement("button");
-    buttonAcquista.setAttribute("class", "btn btn-primary mt-3");
-    buttonAcquista.textContent = "Acquista";
+        let buttonAcquista = document.createElement("button");
+        buttonAcquista.setAttribute("class", "btn btn-primary mt-3");
+        buttonAcquista.textContent = "Acquista";
 
-    divCardBody.appendChild(buttonAcquista);
+        divCardBody.appendChild(buttonAcquista);
+    } else {
+        divCardBody.innerHTML += "<h3> Film non più disponibile </h3>"
+    }
 
     return card;
 }
