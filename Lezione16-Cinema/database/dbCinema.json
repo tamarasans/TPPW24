@@ -1,0 +1,36 @@
+{
+
+    "spettacoli": [
+        {
+            "id": "1",
+            "titolo": "Dune 2",
+            "locandina": "https://pad.mymovies.it/filmclub/2021/10/212/locandinapg1.jpg",
+            "durata": 166,
+            "prezzo": 6.50,
+            "replica": [
+                {
+                    "sala": "Sala 1 - IMax",
+                    "orario": "20:30"
+                },
+                {
+                    "sala": "Sala 2 - O.V.",
+                    "orario": "21:00"
+                },
+                {
+                    "sala": "Sala 1 - IMax",
+                    "orario": "23:00"
+                }
+            ],
+            "scadenza": "22/03/24",
+            "disponibilita": true
+        }
+    ],
+
+    "bigliettiAcquistati":[
+        {
+            "nome": "Dario Mennillo",
+            "spettacolo": "Dune - Sala 1 Imax - 20:30",
+            "pagamento": true
+        }
+    ]
+}
