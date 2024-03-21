@@ -1,0 +1,8 @@
+<h2>Lista Client</h2>
+
+<ul *ngFor="let client of listaClient">
+    <li [ngClass]="{'online': client.server.status == true, 'offline': client.server.status == false}">
+        {{client.nome}}
+        {{client.tipo}} -
+        {{client.server.nome}} {{client.server.tipo}} {{client.server.status}} </li>
+</ul>
