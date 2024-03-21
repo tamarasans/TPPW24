@@ -1,4 +1,4 @@
-<h2>Lista Client</h2>
+<h2>Lista Client di {{admin.nome}} </h2>
 
 <ul *ngFor="let client of listaClient">
     <li [ngClass]="{'online': client.server.status == true, 'offline': client.server.status == false}">

@@ -1,0 +1,10 @@
+<h2> {{utente.nome}} {{utente.cognome}} </h2>
+<p>Email: {{utente.email}} </p>
+<p [ngClass]="{
+    onlineCl: utente.status == 'online', 
+    offlineCl: utente.status == 'offline'
+    }">
+    Status: {{utente.status}}
+</p>
+
+<button (click)="cambiaStatus()">Cambia Status</button>

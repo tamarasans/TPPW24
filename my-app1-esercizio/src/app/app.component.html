@@ -1,7 +1,17 @@
+<!-- @Output() -->
+<app-nuovo-server (onInviaServer)="onPrendiServer($event)"></app-nuovo-server>
+
+<hr>
+
 <div class="box">
-    <app-client></app-client>
+    <!-- @Input() -->
+    <app-client [admin]="admin"></app-client>
 </div>
 
 <div class="box">
-    <app-server></app-server>
+    <h3>Lista Server</h3>
+    <ul *ngFor="let server of listaServer">
+        <!-- Qui vengono creati tanti component quanti sono gli elementi nell'array -->
+        <app-server [server]="server"></app-server>
+    </ul>
 </div>

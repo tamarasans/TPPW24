@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Client } from '../models/client.model';
 
 
@@ -29,6 +29,12 @@ export class ClientComponent implements OnInit {
       }
     },
   ]
+
+  @Input() admin: {
+    nome: string,
+    cognome: string
+  };
+
 
   constructor() { }
 

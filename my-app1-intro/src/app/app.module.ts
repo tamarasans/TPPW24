@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { ListaStudentiComponent } from './lista-studenti/lista-studenti.component';
+import { AmministratoreComponent } from './amministratore/amministratore.component';
+import { UtenteComponent } from './utente/utente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaStudentiComponent
+    AmministratoreComponent,
+    UtenteComponent
   ],
   imports: [
     BrowserModule,
