@@ -73,3 +73,7 @@ function creaCardFilm(film) {
 
     return card;
 }
+
+
+
+// Questo è un commento per vedere come funziona Git
