@@ -1,2 +1,3 @@
-# TPPW24
-Repo del corso di Tecnico Prod Pagine Web
+Questo è il Repo delle lezioni di JAVASCRIPT
+
+ciao
