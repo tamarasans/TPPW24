@@ -1,0 +1,20 @@
+<div class="row mt-3 ">
+    <app-edit-studente></app-edit-studente>
+</div>
+
+<div class="row">
+
+    <div class="col-6 mt-4">
+        <ul *ngFor="let studente of listaStudenti">
+            <a [routerLink]="['/studenti', studente.id]">
+                <li>
+                    <!-- {{studente.id}} - {{studente.nome}} - {{studente.corso}} -->
+                    <strong>Id: </strong> {{studente.id}}
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div class="col-6 mt-4">
+        <router-outlet></router-outlet>
+    </div>
+</div>
