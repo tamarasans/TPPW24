@@ -1,0 +1,34 @@
+{
+  "commenti": [
+    {
+      "id": "1",
+      "bodyTxt": "Questo mi piace, quello no!"
+    },
+    {
+      "id": "2",
+      "bodyTxt": "Domani quasi quasi faccio festa"
+    },
+    {
+      "id": "3",
+      "bodyTxt": "Bollino rosso su tutte le autostrade"
+    },
+    {
+      "id": "4",
+      "bodyTxt": "In bocca al lupo per lo stage"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "nome": "Dario",
+      "ruolo": "Admin",
+      "password": true
+    },
+    {
+      "id": "2",
+      "nome": "Maria",
+      "ruolo": "Admin",
+      "password": false
+    }
+  ]
+}
