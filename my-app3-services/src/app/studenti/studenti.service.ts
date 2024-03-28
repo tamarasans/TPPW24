@@ -49,4 +49,8 @@ export class StudentiService {
     this.listaStudenti.push(studente);
   }
 
+  removeStudente(id: number){
+    console.log("Rimuovo con uno splice");
+    
+  }
 }

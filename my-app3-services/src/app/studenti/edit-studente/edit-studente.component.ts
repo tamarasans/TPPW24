@@ -24,6 +24,9 @@ export class EditStudenteComponent implements OnInit{
   onAddStudente(){
     let studente: Studente = new Studente(this.idNuovoStud, this.nomeNuovoStud, this.corsoNuovoStud);
     this.studServ.addStudente(studente);
+    this.idNuovoStud++;
+    this.nomeNuovoStud = "";
+    this.corsoNuovoStud = ""
    }
 
 }
