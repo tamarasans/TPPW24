@@ -1,0 +1,23 @@
+<h1>La mia prima Applicazione</h1>
+<p class="{{ nomeClasse }}">titolo: {{title}}</p>
+<p>Partecipanti: {{numStudenti}}</p>
+<p>Durata del corso: {{durataCorso}} ore</p>
+
+<h3>Docenti</h3>
+<ul>
+    <li *ngFor="let docente of docenti">
+        {{docente}}
+    </li>
+</ul>
+
+<p> sto usando la classe {{nomeClasse}} </p>
+
+<hr>
+<div class="card">
+    <app-amministratore></app-amministratore>
+</div>
+
+
+<div class="card">
+    <app-utente></app-utente>
+</div>

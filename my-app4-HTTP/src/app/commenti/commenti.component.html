@@ -1,0 +1,7 @@
+<p>commenti works!</p>
+
+<ul *ngFor="let commento of listaCommenti">
+    {{commento.id}} - {{commento.bodyTxt}}
+</ul>
+
+<button (click)="onAddCommento()">Add commento</button>

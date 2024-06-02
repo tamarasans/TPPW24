@@ -1,0 +1,18 @@
+<h3>Costruisci la tua pizza con il Two-Way Databinding</h3>
+
+<label for="nomePizza">Nome Pizza</label>
+<br>
+<!-- OSS1: ngModel è una direttiva che permette di legare il campo input con la prop di classe.
+
+OSS2: per poterlo far funzionare devo importare in angularModule un modulo chiamato FormsModule nell'array imports:[]-->
+<input type="text" [(ngModel)]="nomePizza">
+<br>
+<label for="prezzoPizza">Prezzo</label><br>
+<input type="number" [(ngModel)]="prezzoPizza">
+
+<p>Riepilogo</p>
+<p *ngIf="nomePizza != null ">
+    {{nomePizza}} - {{prezzoPizza}} €
+</p>
+
+<button (click)="onAddPizza()">Add Pizza</button>

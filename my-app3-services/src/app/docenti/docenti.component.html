@@ -1,0 +1,25 @@
+<h2>I nostri carissimi docenti</h2>
+
+<div class="row">
+    <div class="col-6">
+        <div class="list-group">
+
+            <ul *ngFor="let docente of listaDocenti">
+                <a [routerLink]="['/docenti', docente.id, docente.nome, docente.materia, docente.corso]">
+                    <li class="list-group-item">
+                        {{docente.id}} - {{docente.nome}}
+                    </li>
+                </a>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="col-6">
+        <router-outlet></router-outlet>
+    </div>
+
+
+
+</div>

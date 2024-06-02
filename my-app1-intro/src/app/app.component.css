@@ -1,0 +1,15 @@
+.txtRed{
+    color: red;
+}
+
+.txtBlue{
+    color: blue;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+}

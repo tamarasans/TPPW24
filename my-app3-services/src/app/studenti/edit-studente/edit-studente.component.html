@@ -1,0 +1,15 @@
+<h2>Aggiungi uno studente</h2>
+
+<div class="mb-3 col-6">
+    <label for="" class="form-label">Id</label>
+    <input type="text" class="form-control" [(ngModel)]="idNuovoStud" disabled />
+
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" [(ngModel)]="nomeNuovoStud" />
+
+    <label for="" class="form-label">Corso</label>
+    <input type="text" class="form-control" [(ngModel)]="corsoNuovoStud" />
+
+    <button class="btn btn-primary mt-3" (click)="onAddStudente()">Add Studente</button>
+
+</div>
